@@ -18,8 +18,8 @@ class FoodProduct {
 }
 
 const product = new FoodProduct(
-	"Молоко",
-	"2,5%",
+	"Молоко 2,5%",
+	"Молочка",
 	"Яготинське",
 	"2026-08-20",
 );
@@ -52,11 +52,10 @@ class DiscountedProduct extends FoodProduct {
 }
 
 const product2 = new DiscountedProduct(
-	"Кефір",
-	"1%",
+	"Кефір 1%",
+	"Молочка",
 	"Молокія",
 	"2026-08-15",
 	50,
 );
 console.log(product2.getFullInfo());
-//
