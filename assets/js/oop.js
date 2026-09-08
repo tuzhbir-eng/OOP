@@ -59,3 +59,4 @@ const product2 = new DiscountedProduct(
 	50,
 );
 console.log(product2.getFullInfo());
+//
