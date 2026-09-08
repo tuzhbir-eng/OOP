@@ -41,7 +41,7 @@ class DiscountedProduct extends FoodProduct {
 	applyDiscount(percent) {
 		if (percent > this._maxDiscountLimit)
 			throw new Error(
-				`Знижка не може перевищувати допустимий ліміт: ${maxDiscountLimit}`,
+				`Знижка не може перевищувати допустимий ліміт: ${this._maxDiscountLimit}`,
 			);
 		this._currentDiscount = percent;
 		return true;
