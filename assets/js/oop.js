@@ -1,4 +1,4 @@
-class foodProduct {
+class FoodProduct {
 	constructor(title, category, brand, manufactureDate) {
 		this._title = title;
 		this._category = category;
@@ -6,20 +6,18 @@ class foodProduct {
 		this._manufactureDate = new Date(manufactureDate);
 	}
 	get ageInDays() {
-		return this.calcDate();
-	}
-	calcDate() {
 		return Math.floor(
 			(new Date() - this._manufactureDate) /
 				(1000 * 60 * 60 * 24),
 		);
 	}
+
 	getFullInfo() {
 		return ` ${this._title} ${this._category} ${this._brand} \nКількість днів від дати виготовлення: ${product.ageInDays}`;
 	}
 }
 
-const product = new foodProduct(
+const product = new FoodProduct(
 	"Молоко",
 	"2,5%",
 	"Яготинське",
@@ -28,7 +26,7 @@ const product = new foodProduct(
 console.log(product.ageInDays);
 console.log(product.getFullInfo());
 
-class DiscountedProduct extends foodProduct {
+class DiscountedProduct extends FoodProduct {
 	constructor(
 		title,
 		category,
