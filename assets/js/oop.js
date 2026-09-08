@@ -13,7 +13,7 @@ class FoodProduct {
 	}
 
 	getFullInfo() {
-		return ` ${this._title} ${this._category} ${this._brand} \nКількість днів від дати виготовлення: ${product.ageInDays}`;
+		return ` ${this._title} ${this._category} ${this._brand} \nКількість днів від дати виготовлення: ${this.ageInDays}`;
 	}
 }
 
